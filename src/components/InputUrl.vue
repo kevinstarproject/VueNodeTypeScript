@@ -2,7 +2,7 @@
 <div>
 <div class="submit-form">
 
-  <h1>Shorten Url</h1>
+  <h1>{{msg}}</h1>
 
 
     <input type="text" class="form-control" id="url" required v-model="shortenUrl.originalUrl" laceholder="Enter Url" name="url">
@@ -34,7 +34,7 @@ export default class InputUrl extends Vue {
 	shortenUrl:"",
 	createdAt:""
   }
-  @Prop() private msg!: string;
+  @Prop({default:"Shorten Url"}) private msg!: string;
   shortenOriginalUrl(){
       ShortenUrlService.create(this.shortenUrl.originalUrl).
       then((response)=>{
