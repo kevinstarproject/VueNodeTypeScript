@@ -1,34 +1,22 @@
-# b_shorten_url
+# Shorten Url
 
-## Project setup
+## Setting backend url
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+src/vars.ts
 ```
 
-### Compiles and minifies for production
+### Build frontend interface
 ```
-yarn build
+npm run build
+```
+
+### Run Shorten Url Service
+```
+docker-compose up
 ```
 
 ### Run your unit tests
 ```
-yarn test:unit
+npm run test
 ```
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
