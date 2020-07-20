@@ -7,16 +7,9 @@ services:
       - ~/data/db:/data/db
     ports:
       - 27017:27017
-    networks:
-      - webapp-network
   web:
     build: .
     depends_on:
       - database
     ports:
       - 3000:3000
-    networks:
-      - webapp-network
-networks:
-  webapp-network:
-    driver: bridge

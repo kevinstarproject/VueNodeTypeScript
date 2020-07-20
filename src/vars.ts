@@ -1,1 +1,1 @@
-export const baseUrl = "http://34.219.2.98:3000/shorten";
+export const baseUrl = "http://localhost:3000/shorten";
